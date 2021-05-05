@@ -23,10 +23,11 @@ syn match nextflowBlock "\v(input|output|script|shell|exec|stub|when):"
 " ADD input and output qualifiers TODO
 
 syn keyword nextflowKeyword from into as 
-
+syn keyword nextflowBoolean true false
 syn keyword nextflowType set tuple file val env path
 
-syn keyword nextflowSpecial    include workflow Channel process params launchDir
+syn keyword nextflowSpecial    include Channel params launchDir
+syn keyword nextflowSecialWork workflow process
 
 syn keyword nextflowConstant   null
 
@@ -40,10 +41,18 @@ hi def link nextflowELExpr            Identifier
 hi def link groovyELExpr              Identifier
 
 hi def link nextflowConstant          Constant
+
+hi def link nextflowBoolean			  Boolean
+
 hi def link nextflowDirective         Statement
+
 hi def link nextflowKeyword           Operator
+hi def link nextflowSecialWork 		  Operator
+
 hi def link nextflowType              Type
+
 hi def link nextflowSpecial           Special
+
 hi def link nextflowBlock             Function
 
 hi def link nextflowBlockString       String
