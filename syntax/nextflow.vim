@@ -16,17 +16,21 @@ syn match nextflowELExpr "\!{.\{-}}" contained
 
 " Nextflow specifics
 
-syn keyword nextflowDirective afterScript beforeScript cache container cpus clusterOptions disk echo errorStrategy executor ext label maxErrors maxForks maxRetries memory module penv publishDir queue scratch storeDir stageInMode stageOutMode tag time validExitStatus 
+syn keyword nextflowDirective accelerator  afterScript  beforeScript  cache  cpus  conda  container  containerOptions  clusterOptions  disk  echo  errorStrategy  executor  ext  label  machineType  maxErrors  maxForks  maxRetries  memory  module  penv  pod  publishDir  queue  scratch  stageInMode  stageOutMode  storeDir  tag  time  validExitStatus
 
-syn match nextflowBlock "\v(input|output|script|shell|exec):"
+syn match nextflowBlock "\v(input|output|script|shell|exec|stub|when):"
 
-syn keyword nextflowKeyword from into
+" ADD input and output qualifiers TODO
 
-syn keyword nextflowType file val process Channel
+syn keyword nextflowKeyword from into as 
 
-syn keyword nextflowSpecial    workflow params launchDir
+syn keyword nextflowType set tuple file val process Channel env path
+
+syn keyword nextflowSpecial    include workflow params launchDir
 
 syn keyword nextflowConstant   null
+
+
 
 
 " Apply highlighting
