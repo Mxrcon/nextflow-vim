@@ -24,9 +24,9 @@ syn match nextflowBlock "\v(input|output|script|shell|exec|stub|when):"
 
 syn keyword nextflowKeyword from into as 
 
-syn keyword nextflowType set tuple file val process workflow Channel env path
+syn keyword nextflowType set tuple file val Channel env path
 
-syn keyword nextflowSpecial    include workflow params launchDir
+syn keyword nextflowSpecial    include workflow porcess params launchDir
 
 syn keyword nextflowConstant   null
 
