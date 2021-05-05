@@ -42,7 +42,7 @@ hi def link groovyELExpr              Identifier
 
 hi def link nextflowConstant          Constant
 
-hi def link nextflowBoolean			  Boolean
+hi def link nextflowBoolean			  Constant
 
 hi def link nextflowDirective         Statement
 
