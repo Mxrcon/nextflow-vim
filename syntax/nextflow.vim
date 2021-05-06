@@ -21,11 +21,10 @@ syn match nextflowBlock "\v(input|output|script|shell|exec|stub|when):"
 
 " ADD input and output qualifiers TODO
 
-syn keyword nextflowKeyword from into as 
+syn keyword nextflowKeyword from into as nextflow params
 syn keyword nextflowBoolean true false
 syn keyword nextflowType set tuple file val env path
-syn keyword nextflowSpecial    include Channel params launchDir nextflow 
-syn keyword nextflowFunction workflow process
+syn keyword nextflowSpecial    include Channel  launchDir  
 syn match nextflowProcessOptions "\v(mode|enabled|emit|optional):" 
 
 syn keyword nextflowConstant   null
@@ -49,7 +48,7 @@ hi def link nextflowKeyword           Keyword
 hi def link nextflowFunction		  Function
 hi def link nextflowProcessOptions 	  Define
 hi def link nextflowType              Type
-
+hi def link nextflowComment			  Comment
 hi def link nextflowSpecial           Special
 
 hi def link nextflowBlock             Function
