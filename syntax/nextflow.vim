@@ -45,7 +45,7 @@ hi def link nextflowBoolean			  Boolean
 
 hi def link nextflowDirective         Statement
 
-hi def link nextflowKeyword           Operator
+hi def link nextflowKeyword           Keyword
 hi def link nextflowSecialWork 		  Special
 hi def link nextflowProcessOptions 	  Define
 hi def link nextflowType              Type
