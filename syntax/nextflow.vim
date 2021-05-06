@@ -12,7 +12,6 @@ source $VIMRUNTIME/syntax/groovy.vim
 syn region  nextflowBlockString          start=+'''+ keepend end=+'''+ contains=groovySpecialChar,groovySpecialError,@Spell,nextflowELExpr,@shell
 
 syn match nextflowELExpr "\!{.\{-}}" contained
-syn match nextflowUpper "[A-Z]{1,}"
 
 " Nextflow specifics
 
@@ -39,7 +38,7 @@ let b:current_syntax = "nextflow"
 
 hi def link nextflowELExpr            Identifier
 hi def link groovyELExpr              Identifier
-hi def link nextflowUpper		      Identifier
+
 hi def link nextflowConstant          Constant
 
 hi def link nextflowBoolean			  Constant
