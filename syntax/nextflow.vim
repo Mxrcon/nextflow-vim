@@ -12,7 +12,7 @@ source $VIMRUNTIME/syntax/groovy.vim
 syn region  nextflowBlockString          start=+'''+ keepend end=+'''+ contains=groovySpecialChar,groovySpecialError,@Spell,nextflowELExpr,@shell
 
 syn match nextflowELExpr "\!{.\{-}}" contained
-
+syn match nextflowUpper "[A^Z]*"
 
 " Nextflow specifics
 
@@ -25,7 +25,7 @@ syn match nextflowBlock "\v(input|output|script|shell|exec|stub|when):"
 syn keyword nextflowKeyword from into as 
 syn keyword nextflowBoolean true false
 syn keyword nextflowType set tuple file val env path
-syn keyword nextflowSpecial    include Channel params launchDir
+syn keyword nextflowSpecial    include Channel params launchDir nextflow 
 syn keyword nextflowSecialWork workflow process
 syn match nextflowProcessOptions "\v(mode|enabled|emit|optional):" 
 
@@ -39,7 +39,7 @@ let b:current_syntax = "nextflow"
 
 hi def link nextflowELExpr            Identifier
 hi def link groovyELExpr              Identifier
-
+hi def link nextflowUpper		      Identifier
 hi def link nextflowConstant          Constant
 
 hi def link nextflowBoolean			  Constant
