@@ -25,7 +25,7 @@ syn keyword nextflowKeyword from into as
 syn keyword nextflowBoolean true false
 syn keyword nextflowType set tuple file val env path
 syn keyword nextflowSpecial    include Channel params launchDir nextflow 
-syn keyword nextflowSecialWork workflow process
+syn keyword nextflowFunction workflow process
 syn match nextflowProcessOptions "\v(mode|enabled|emit|optional):" 
 
 syn keyword nextflowConstant   null
@@ -46,7 +46,7 @@ hi def link nextflowBoolean			  Boolean
 hi def link nextflowDirective         Statement
 
 hi def link nextflowKeyword           Keyword
-hi def link nextflowSecialWork 		  Special
+hi def link nextflowFunction		  Function
 hi def link nextflowProcessOptions 	  Define
 hi def link nextflowType              Type
 
