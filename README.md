@@ -6,28 +6,25 @@ Extends (presumed-available) groovy syntax highlighting.
 
 ![screenshot](images/screenshot.png)
 
+Image using [true](https://github.com/megantiu/true.vim) vim colorscheme by [megentiu](https://github.com/megantiu/) 
+
 ## Installation
 
 ### vim-plug
 
-    Plug 'LukeGoodsell/nextflow-vim'
+    Plug 'Mxrcon/nextflow-vim'
 
 ### Vundle
 
-    Plugin 'LukeGoodsell/nextflow-vim'
+    Plugin 'Mxrcon/nextflow-vim'
 
 ### NeoBundle
 
-    NeoBundle 'LukeGoodsell/nextflow-vim'
+    NeoBundle 'Mxrcon/nextflow-vim'
 
 ### Manual
 
-    git clone https://github.com/LukeGoodsell/nextflow-vim ~/nextflow-vim;
+    git clone https://github.com/Mxrcon/nextflow-vim ~/nextflow-vim;
     mkdir ~/.vim/ftdetect; mkdir ~/.vim/ftplugin;
     cp ~/nextflow-vim/ftdetect/nextflow.vim ~/.vim/ftdetect;
     cp ~/nextflow-vim/syntax/nextflow.vim ~/.vim/ftplugin;
-
-## Goals
-
-* language-specific highlighting of shell/script blocks.
-* tab-completion

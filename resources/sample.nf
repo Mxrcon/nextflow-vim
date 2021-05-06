@@ -1,6 +1,6 @@
 nextflow.enable.dsl = 2
 //this is a process inclusion
-include { BOO as FOO} from "./modules/foo.nf" addParams(resultsDir: "${params.include}")
+include { BOO as FOO} from "./modules/foo.nf"
 
 /*
 
@@ -9,7 +9,7 @@ Lot of comments
 
 process FOO2 {
     tag "${tag}"
-    publishDir params.resultsDir, mode: params.saveMode, enabled: params.shouldPublish
+    publishDir params.outdir, mode: params.some_param
     container 'some_container_link'
     cpus 1
     memory "2 GB"
@@ -30,7 +30,6 @@ process FOO2 {
     """
     echo "stub stub stub"
     """
-
 }
 
 workflow test {
@@ -38,6 +37,5 @@ workflow test {
 	input = Channel.fromFilePairs(params.filepairs)
 	FOO(input)
 	FOO2(FOO.out.CHANNEL)
-
 
 }
