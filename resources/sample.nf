@@ -1,6 +1,11 @@
 nextflow.enable.dsl = 2
-
+//this is a process inclusion
 include { BOO as FOO} from "./modules/foo.nf" addParams(resultsDir: "${params.include}")
+
+/*
+
+Lot of comments
+*/
 
 process FOO2 {
     tag "${tag}"

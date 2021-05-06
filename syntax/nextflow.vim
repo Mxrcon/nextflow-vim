@@ -41,13 +41,13 @@ hi def link groovyELExpr              Identifier
 
 hi def link nextflowConstant          Constant
 
-hi def link nextflowBoolean			  Constant
+hi def link nextflowBoolean			  Boolean
 
 hi def link nextflowDirective         Statement
 
 hi def link nextflowKeyword           Operator
-hi def link nextflowSecialWork 		  Operator
-hi def link nextflowProcessOptions 	  Operator
+hi def link nextflowSecialWork 		  Special
+hi def link nextflowProcessOptions 	  Define
 hi def link nextflowType              Type
 
 hi def link nextflowSpecial           Special
