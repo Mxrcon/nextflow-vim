@@ -5,7 +5,7 @@ endif
 setlocal expandtab
 setlocal shiftwidth=4
 setlocal softtabstop=4
-setlocal colorcolumn=80
+setlocal colorcolumn=180
 
 source $VIMRUNTIME/syntax/groovy.vim
 
